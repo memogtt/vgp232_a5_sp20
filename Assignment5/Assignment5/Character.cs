@@ -28,13 +28,13 @@ namespace Assignment5
 
         public void TakeDamage(int damage)
         {
-            HealthPoints -= 1;
+            HealthPoints -= damage;
             Console.WriteLine("{0} has taken {1} damage and has a total of {2} left.", Name, damage, HealthPoints);
         }
 
         public void RestoreHealth(int amount)
         {
-            HealthPoints += 1;
+            HealthPoints += amount;
             Console.WriteLine("{0} has restored {1} hp and has a total of {2}.", Name, amount, HealthPoints);
         }
     }
