@@ -53,5 +53,10 @@ namespace Assignment5
                 Console.WriteLine(item);
             }
         }
+
+        public int GetInventorySize()
+        {
+            return items.Count;
+        }
     }
 }
