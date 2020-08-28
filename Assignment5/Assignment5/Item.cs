@@ -20,5 +20,10 @@ namespace Assignment5
             Modifier = modifier;
             IType = type;
         }
+
+        public override string ToString()
+        {
+            return string.Format("Item {0} has a modifier of {1} and is type {2}", Name, Modifier, IType);
+        }
     }
 }

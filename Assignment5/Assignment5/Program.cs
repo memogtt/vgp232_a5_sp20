@@ -10,11 +10,27 @@ namespace Assignment5
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Test of inventory");
 
-            // TODO: initialize the inventory
-            // Add a few items
-            // Remove a few items
-            // show the inventory.
+            Inventory myInventory = new Inventory(3);
+
+            Item potion = new Item("Potion", 2, ItemType.consumable);
+
+            Console.WriteLine("Printing single Item");
+            Console.WriteLine(potion);
+
+            Item sword = new Item("Sword", 3, ItemType.equipment);
+
+            myInventory.Add(potion);
+            myInventory.Add(sword);
+
+            Console.WriteLine("Print of inventory");
+            myInventory.ShowInventory();
+
+            myInventory.Remove(potion);
+
+            Console.WriteLine("Print of inventory after removing potion");
+            myInventory.ShowInventory();
 
         }
     }
